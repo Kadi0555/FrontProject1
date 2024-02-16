@@ -1,0 +1,1 @@
+let burger=document.body.querySelector(".header__burger"),blcTwo=document.body.querySelector(".block__two"),bd=document.body;function fncBurger(e){burger.classList.toggle("active"),blcTwo.classList.toggle("active"),bd.classList.toggle("lock")}burger.addEventListener("click",fncBurger);

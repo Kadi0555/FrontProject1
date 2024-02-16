@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+* ul, * li {
+  list-style-type: none;
+}
+
+body body.lock {
+  overflow: hidden;
+}
+body .wrapper header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+  color: #fff;
+  border: 3px solid black;
+  padding: 5px 3px;
+}
+@media (max-width: 767px) {
+  body .wrapper header {
+    padding: 15px 7px;
+  }
+}
+body .wrapper header .limit__column {
+  display: flex;
+  justify-content: space-between;
+}
+body .wrapper header .limit__column .block__one {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+body .wrapper header .limit__column .block__one .block__blanko {
+  display: flex;
+}
+body .wrapper header .limit__column .block__one .block__blanko * {
+  font-size: 2.3vh;
+}
+body .wrapper header .limit__column .block__one .block__blanko *:hover {
+  cursor: pointer;
+}
+body .wrapper header .limit__column .block__one .block__blanko .container__icon {
+  margin-right: 5px;
+}
+body .wrapper header .limit__column .block__one .block__blanko .container__blanko {
+  font-weight: 700;
+}
+body .wrapper header .limit__column .block__one .email {
+  background-color: rgba(255, 255, 255, 0.1725490196);
+  padding: 2.5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+body .wrapper header .limit__column .block__one .email a {
+  color: rgba(255, 255, 255, 0.6431372549);
+  text-decoration: none;
+}
+body .wrapper header .limit__column .block__two {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  body .wrapper header .limit__column .block__two {
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: block;
+    padding-left: 10px;
+    transition: all 0.4s ease 0s;
+    display: block;
+  }
+}
+body .wrapper header .limit__column .block__two .navigation__column {
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 767px) {
+  body .wrapper header .limit__column .block__two .navigation__column {
+    justify-content: start;
+    margin: 70px 0 40px 0;
+  }
+}
+body .wrapper header .limit__column .block__two .navigation__column * {
+  margin-left: 15px;
+}
+@media (max-width: 767px) {
+  body .wrapper header .limit__column .block__two .navigation__column * {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+body .wrapper header .limit__column .block__two .navigation__column .column {
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+}
+body .wrapper header .limit__column .block__two .navigation__column .column::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  background-color: rgb(255, 113, 67);
+}
+body .wrapper header .limit__column .block__two .navigation__column .column:hover::before {
+  transition: all 0.3s ease 0s;
+  padding-left: 100%;
+}
+body .wrapper header .limit__column .block__two .navigation__column .column:hover {
+  cursor: pointer;
+}
+@media (max-width: 778px) {
+  body .wrapper header .limit__column .block__two .navigation__column {
+    margin-right: 10px;
+  }
+}
+body .wrapper header .limit__column .block__two button {
+  width: 208px;
+  height: 49px;
+  background: rgb(255, 113, 67);
+  justify-self: center;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+}
+body .wrapper header .limit__column .block__two.active {
+  left: 0;
+}
+body .wrapper header .limit__column .header__burger {
+  display: none;
+}
+@media (max-width: 767px) {
+  body .wrapper header .limit__column .header__burger {
+    display: block;
+    position: relative;
+    z-index: 50;
+    height: 20px;
+    width: 30px;
+    margin-top: 2px;
+  }
+  body .wrapper header .limit__column .header__burger::before, body .wrapper header .limit__column .header__burger::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    transition: all 0.4s ease 0s;
+  }
+  body .wrapper header .limit__column .header__burger::before {
+    top: 0;
+  }
+  body .wrapper header .limit__column .header__burger::after {
+    bottom: 0;
+  }
+  body .wrapper header .limit__column .header__burger span {
+    position: absolute;
+    top: 9px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.4s ease 0s;
+  }
+}
+body .wrapper header .limit__column .header__burger.active {
+  overflow: hidden;
+}
+body .wrapper header .limit__column .header__burger.active::before {
+  transform: rotate(45deg);
+  top: 8px;
+}
+body .wrapper header .limit__column .header__burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+body .wrapper header .limit__column .header__burger.active span {
+  display: none;
+}
+body .wrapper main .color__columnBlankoTemplate {
+  background-color: rgb(255, 113, 67);
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 666px) {
+  body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template {
+    justify-content: center;
+  }
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template {
+  display: grid;
+  grid-template-rows: 100px 100px 70px;
+  align-items: center;
+  text-align: center;
+  width: 632px;
+  height: 532px;
+  margin-top: 150px;
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template h1 {
+  font-size: 62px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template h1 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons {
+    margin-top: 40px;
+  }
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons button {
+  width: 220px;
+  height: 61px;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons button {
+    margin-top: 10px;
+  }
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons button:nth-child(1) {
+  margin-right: 10px;
+  background-color: #000;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons button:nth-child(1) {
+    margin-right: 0px;
+  }
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons button:nth-child(1):hover {
+  background-color: #ffffff;
+  color: #000;
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons button:nth-child(2) {
+  background-color: #fff;
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__template .template__buttons button:nth-child(2):hover {
+  background-color: #000;
+  color: #fff;
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__history {
+  width: 420px;
+  height: 860px;
+}
+@media (max-width: 666px) {
+  body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__history {
+    width: auto;
+  }
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__history .history__image {
+  position: relative;
+  z-index: 0;
+  height: 900px;
+}
+@media (max-width: 666px) {
+  body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__history .history__image {
+    display: none;
+    position: absolute;
+  }
+}
+body .wrapper main .color__columnBlankoTemplate .limit__column .column__blanko__template .blanko__history .history__image img {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  justify-content: space-between;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct * {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__speed .correct__images {
+  margin-right: 15px;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__speed .correct__label {
+  display: grid;
+  align-items: center;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__design {
+  display: flex;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__design .correct__images {
+  margin-right: 15px;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__design .correct__label {
+  display: grid;
+  align-items: center;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__modularity {
+  display: flex;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__modularity .correct__images {
+  margin-right: 15px;
+}
+body .wrapper main .color__column__correct .limit__column .column__correct .correct__modularity .correct__label {
+  display: grid;
+  align-items: center;
+}
+body .wrapper main .color__druk {
+  background-color: #000;
+  color: #fff;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk {
+  padding: 80px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk * {
+  margin-top: 30px;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk .text {
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk .author__text {
+  font-weight: 500;
+  font-size: 16px;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk .company {
+  margin-top: 0px;
+  font-weight: 200;
+  color: rgb(212, 212, 212);
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk .blocks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk .blocks .block {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk .blocks .block:nth-child(1) {
+  background-color: #fff;
+}
+body .wrapper main .color__druk .limit__column .druks .column__druk .blocks .block:nth-child(2) {
+  background-color: #a4a4a4;
+}
+body .wrapper main .color__loadingPages .limit__column .container .cont__label {
+  margin-top: 60px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px 0;
+}
+body .wrapper main .color__loadingPages .limit__column .container .cont__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+}
+body .wrapper main .color__loadingPages .limit__column .container .cont__blocks .cont__block {
+  margin: 20px 15px 0px 0px;
+  border: 1px solid rgb(102, 102, 102);
+  box-shadow: 1px 1px 15px black;
+  border-radius: 6px;
+}
+body .wrapper main .color__loadingPages .limit__column .container .cont__blocks .cont__block .block__image {
+  max-width: 380px;
+  max-height: 354px;
+  padding: 20px 20px 0 20px;
+  background-color: #000;
+}
+body .wrapper main .color__loadingPages .limit__column .container .cont__blocks .cont__block .block__image img {
+  width: 100%;
+  height: 100%;
+}
+body .wrapper main .color__loadingPages .limit__column .container .cont__blocks .cont__block .block__text {
+  padding: 25px 0 0 20px;
+  max-width: 380px;
+  height: 77px;
+}
+body button {
+  border-radius: 10px;
+  border: none;
+}
+body button:hover {
+  cursor: pointer;
+}
+
+.limit__column {
+  max-width: 1200px;
+  margin: 0 auto;
+}
